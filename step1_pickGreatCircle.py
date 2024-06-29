@@ -407,7 +407,7 @@ if __name__ == "__main__":
     # **************************************************************************
 
     # Configure figure ...
-    fg.suptitle(f"Great circles from ({args.startLat:+.2f}°,{args.startLon:+.2f}°) to a ring {0.001 * args.rad:,.1f} km around its antipode")
+    fg.suptitle(f"Great circles from ({args.startLat:+.1f}°,{args.startLon:+.1f}°) to a ring {0.001 * args.rad:,.1f} km around its antipode")
     fg.tight_layout()
 
     print("Saving figure ...")
