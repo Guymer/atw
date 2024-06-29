@@ -14,3 +14,12 @@ __pycache__
 # Hide output of PyLint/ShellCheck ...
 pylint.log
 shellcheck.log
+
+# Hide output files ...
+output/*.csv
+output/*.geojson
+output/*.json
+output/*.mp4
+output/*.png
+output/*.wkb.gz
+output/frames/*.png
