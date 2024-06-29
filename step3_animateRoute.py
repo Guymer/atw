@@ -327,7 +327,7 @@ if __name__ == "__main__":
                     )[0] > args.radOfArrows:
                         continue
                 except:
-                    print(f"WARNING: Had to skip an intersection when calculating the distance between ({figLat:+.2f}°,{figLon:+.2f}°) and ({midLat:+.2f}°,{midLon:+.2f}°).")
+                    print(f"WARNING: Had to skip an intersection when calculating the distance between ({figLat:+.3f}°,{figLon:+.3f}°) and ({midLat:+.3f}°,{midLon:+.3f}°).")
                     continue
 
                 # Draw the intersection ...
@@ -362,7 +362,7 @@ if __name__ == "__main__":
         # **********************************************************************
 
         # Configure figure ...
-        fg.suptitle(f"({figLat:+.2f}°,{figLon:+.2f}°) is {0.001 * dist:,.1f} km along the route")
+        fg.suptitle(f"({figLat:+.3f}°,{figLon:+.3f}°) is {0.001 * dist:,.1f} km along the route")
         fg.tight_layout()
 
         # Save figure ...
