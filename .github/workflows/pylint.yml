@@ -10,11 +10,19 @@ jobs:
                 python-version: ["3.10"]
         steps:
             -
-                name: Checkout
+                name: Checkout project                                          # https://github.com/actions/checkout
                 uses: actions/checkout@v4
+                with:
+                    path: main
+            -
+                name: Checkout PyGuymer3                                        # https://github.com/actions/checkout
+                uses: actions/checkout@v4
+                with:
+                    path: pyguymer3
+                    repository: Guymer/PyGuymer3
             -
                 name: Set up Python ${{ matrix.python-version }}
-                uses: actions/setup-python@v3
+                uses: actions/setup-python@v5                                   # https://github.com/actions/setup-python
                 with:
                     python-version: ${{ matrix.python-version }}
             -
@@ -25,4 +33,6 @@ jobs:
             -
                 name: Analysing the Python code with PyLint
                 run: |
+                    export PYTHONPATH=${PWD}/pyguymer3:${PYTHONPATH}
+                    cd main
                     pylint --rcfile=".pylintrc" --disable=C0301,R0801 $(git ls-files "*.py")
