@@ -147,7 +147,6 @@ if __name__ == "__main__":
             points[:, 1],
             debug = args.debug,
               pad = -1.0,
-              tol = args.tol,
         )                                                                       # [°], [°]
         del points
 
