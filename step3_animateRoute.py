@@ -88,7 +88,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--timeout",
         default = 60.0,
-           help = "the timeout for any requests/subprocess calls",
+           help = "the timeout for any requests/subprocess calls (in seconds)",
            type = float,
     )
     parser.add_argument(
