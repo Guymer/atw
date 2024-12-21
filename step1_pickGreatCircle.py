@@ -164,7 +164,7 @@ if __name__ == "__main__":
         args.rad,
         debug = args.debug,
          fill = -1.0,
-         nang = args.nAngs,
+         nAng = args.nAngs,
          simp = -1.0,
           tol = args.tol,
     )
@@ -364,7 +364,7 @@ if __name__ == "__main__":
                 pathWidth,
                 debug = args.debug,
                  fill = -1.0,
-                 nang = args.nAngs,
+                 nAng = args.nAngs,
                  simp = -1.0,
                   tol = args.tol,
             )
