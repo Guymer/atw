@@ -178,7 +178,7 @@ if __name__ == "__main__":
     midLons = []                                                                # [°]
 
     # Loop over intersections ...
-    for neName, intersectPoly in zip(neNames, intersectPolys):
+    for neName, intersectPoly in zip(neNames, intersectPolys, strict = True):
         # Convert the CoordinateSequence of the exterior LinearRing of the
         # intersection into a NumPy array ...
         points = numpy.array(intersectPoly.exterior.coords)                     # [°]
@@ -204,7 +204,7 @@ if __name__ == "__main__":
     # Loop over the unique country names ...
     for uniqueNeName in uniqueNeNames:
         # Loop over intersections ...
-        for neName, intersectPoly, midLon in zip(neNames, intersectPolys, midLons):
+        for neName, intersectPoly, midLon in zip(neNames, intersectPolys, midLons, strict = True):
             # Skip this intersection if it is not from the correct country ...
             if neName != uniqueNeName:
                 continue
@@ -233,7 +233,7 @@ if __name__ == "__main__":
     pngs = [f"output/frames/{dist:08.0f}.png" for dist in dists]
 
     # Loop over frames ...
-    for dist, png in zip(dists, pngs):
+    for dist, png in zip(dists, pngs, strict = True):
         # Skip this frame if it already exists ...
         if os.path.exists(png):
             continue
@@ -311,7 +311,7 @@ if __name__ == "__main__":
             )
 
             # Loop over intersections ...
-            for neName, intersectPoly, midLat, midLon in zip(neNames, intersectPolys, midLats, midLons):
+            for neName, intersectPoly, midLat, midLon in zip(neNames, intersectPolys, midLats, midLons, strict = True):
                 # Skip this intersection if it is not from the correct country ...
                 if neName != sortedNeName:
                     continue
