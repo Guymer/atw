@@ -293,7 +293,7 @@ if __name__ == "__main__":
         axL.add_geometries(
             pyguymer3.geo.extract_lines(circle),
             cartopy.crs.PlateCarree(),
-            edgecolor = matplotlib.pyplot.cm.jet((dists[iAng] - minDist) / (maxDist - minDist)),
+            edgecolor = matplotlib.colormaps["jet"]((dists[iAng] - minDist) / (maxDist - minDist)),
             facecolor = "none",
             linewidth = 1.0,
                zorder = 5.1,
@@ -301,7 +301,7 @@ if __name__ == "__main__":
         axR.add_geometries(
             pyguymer3.geo.extract_lines(circle),
             cartopy.crs.PlateCarree(),
-            edgecolor = matplotlib.pyplot.cm.jet((dists[iAng] - minDist) / (maxDist - minDist)),
+            edgecolor = matplotlib.colormaps["jet"]((dists[iAng] - minDist) / (maxDist - minDist)),
             facecolor = "none",
             linewidth = 1.0,
                zorder = 5.1,
@@ -309,7 +309,7 @@ if __name__ == "__main__":
         axB.add_geometries(
             pyguymer3.geo.extract_lines(circle),
             cartopy.crs.PlateCarree(),
-            edgecolor = matplotlib.pyplot.cm.jet((dists[iAng] - minDist) / (maxDist - minDist)),
+            edgecolor = matplotlib.colormaps["jet"]((dists[iAng] - minDist) / (maxDist - minDist)),
             facecolor = "none",
             linewidth = 1.0,
                zorder = 5.1,
