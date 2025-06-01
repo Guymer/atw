@@ -17,6 +17,8 @@ cProfile.log
 mypy.log
 pylint.log
 shellcheck.log
+*.gcda
+*.gcno
 
 # Hide output files ...
 output/*.csv
