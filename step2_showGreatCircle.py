@@ -280,7 +280,7 @@ if __name__ == "__main__":
     matplotlib.pyplot.close(fg)
 
     # Optimise PNG ...
-    pyguymer3.image.optimize_image(
+    pyguymer3.image.optimise_image(
         "output/pathBand.png",
           debug = args.debug,
           strip = True,
