@@ -74,14 +74,14 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--radius-of-arrows",
-        default = 0.1 * pyguymer3.consts.CIRCUMFERENCE_OF_EARTH,
+        default = 0.1 * pyguymer3.CIRCUMFERENCE_OF_EARTH,
            dest = "radOfArrows",
            help = "the Geodetic distance from the centre of the map to the limit of bothering to draw the arrows (in metres)",
            type = float,
     )
     parser.add_argument(
         "--radius-of-labels",
-        default = 0.2 * pyguymer3.consts.CIRCUMFERENCE_OF_EARTH,
+        default = 0.2 * pyguymer3.CIRCUMFERENCE_OF_EARTH,
            dest = "radOfLabels",
            help = "the Geodetic distance from the centre of the map to the labels (in metres)",
            type = float,

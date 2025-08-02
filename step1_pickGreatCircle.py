@@ -155,7 +155,7 @@ if __name__ == "__main__":
     args.alt *= 12.0 * 0.0254                                                   # [m]
     args.rad *= 1852.0                                                          # [m]
     args.maxSegLen *= 1852.0                                                    # [m]
-    pathWidth = pyguymer3.consts.RADIUS_OF_EARTH * math.acos(pyguymer3.consts.RADIUS_OF_EARTH / (pyguymer3.consts.RADIUS_OF_EARTH + args.alt))  # [m]
+    pathWidth = pyguymer3.RADIUS_OF_EARTH * math.acos(pyguymer3.RADIUS_OF_EARTH / (pyguymer3.RADIUS_OF_EARTH + args.alt))   # [m]
 
     print(f"The horizon is {0.001 * pathWidth:,.1f} km away (along the surface of the Earth) when viewed from an altitude of {0.001 * args.alt:,.1f} km.")
 
