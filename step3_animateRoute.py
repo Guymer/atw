@@ -391,7 +391,7 @@ if __name__ == "__main__":
 
     # Set heights ...
     # NOTE: By inspection, the PNG frames are 3,840 px wide.
-    heights = [512, 1024, 2048]                                                 # [px]
+    heights = [256, 512, 1024, 2048]                                            # [px]
 
     # Loop over heights ...
     for height in heights:
