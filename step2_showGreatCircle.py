@@ -6,7 +6,6 @@ if __name__ == "__main__":
     # Import standard modules ...
     import argparse
     import gzip
-    import os
     import pathlib
 
     # Import special modules ...
