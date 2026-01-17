@@ -249,21 +249,21 @@ if __name__ == "__main__":
     # Configure axes ...
     pyguymer3.geo.add_map_background(
         axL,
-             debug = args.debug,
-              name = "shaded-relief",
-        resolution = "large8192px",
+          debug = args.debug,
+           name = "shaded-relief",
+        subName = "large8192px",
     )
     pyguymer3.geo.add_map_background(
         axR,
-             debug = args.debug,
-              name = "shaded-relief",
-        resolution = "large8192px",
+          debug = args.debug,
+           name = "shaded-relief",
+        subName = "large8192px",
     )
     pyguymer3.geo.add_map_background(
         axB,
-             debug = args.debug,
-              name = "shaded-relief",
-        resolution = "large8192px",
+          debug = args.debug,
+           name = "shaded-relief",
+        subName = "large8192px",
     )
 
     # Initialize list ...
