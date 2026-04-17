@@ -6,6 +6,7 @@
 .mypy.ini
 .pylint.ini
 .shellcheckrc
+git-files.txt
 LICENCE.txt
 README.md
 requirements.txt
