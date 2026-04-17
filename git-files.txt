@@ -1,0 +1,14 @@
+.editorconfig
+.github/FUNDING.yml
+.github/workflows/mypy.yaml
+.github/workflows/pylint.yaml
+.gitignore
+.mypy.ini
+.pylint.ini
+.shellcheckrc
+LICENCE.txt
+README.md
+requirements.txt
+step1_pickGreatCircle.py
+step2_showGreatCircle.py
+step3_animateRoute.py
