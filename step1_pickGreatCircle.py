@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Use the proper idiom in the main module ...
-# NOTE: See https://docs.python.org/3.12/library/multiprocessing.html#the-spawn-and-forkserver-start-methods
+# NOTE: See https://docs.python.org/3.13/library/multiprocessing.html#the-spawn-and-forkserver-start-methods
 if __name__ == "__main__":
     # Import standard modules ...
     import argparse
@@ -140,7 +140,7 @@ if __name__ == "__main__":
         os.mkdir("output")
 
     # Save arguments ...
-    with open("output/args.json", "wt", encoding = "utf-8") as fObj:
+    with open("output/args.json", mode = "wt", encoding = "utf-8") as fObj:
         json.dump(
             vars(args),
             fObj,
@@ -348,7 +348,7 @@ if __name__ == "__main__":
     print("Saving path (as a line) ...")
 
     # Save line and clean up ...
-    with open("output/pathLine.csv", "wt", encoding = "utf-8") as fObj:
+    with open("output/pathLine.csv", mode = "wt", encoding = "utf-8") as fObj:
         fObj.write("longitude [°],latitude [°]\n")
         for i in range(coords.shape[0]):
             fObj.write(f"{coords[i, 0]:e},{coords[i, 1]:e}\n")
@@ -388,7 +388,7 @@ if __name__ == "__main__":
         gzObj.write(shapely.wkb.dumps(path))
 
     # Save [Multi]Polygon ...
-    with open("output/pathBand.geojson", "wt", encoding = "utf-8") as fObj:
+    with open("output/pathBand.geojson", mode = "wt", encoding = "utf-8") as fObj:
         geojson.dump(
             path,
             fObj,
