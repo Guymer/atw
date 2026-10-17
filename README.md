@@ -1,6 +1,6 @@
 # Around The World (ATW)
 
-!["mypy" GitHub Action Status](https://github.com/Guymer/atw/actions/workflows/mypy.yaml/badge.svg) !["pylint" GitHub Action Status](https://github.com/Guymer/atw/actions/workflows/pylint.yaml/badge.svg)
+!["mypy" GitHub Action Status](https://github.com/Guymer/atw/actions/workflows/mypy.yaml/badge.svg)
 
 This project aims to show an interesting route for you to circumnavigate planet Earth.
 
