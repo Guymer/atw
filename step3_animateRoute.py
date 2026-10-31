@@ -157,7 +157,7 @@ if __name__ == "__main__":
             # Loop over path Polygons ...
             for pathPoly in pathPolys:
                 # Calculate the intersection and skip if it is empty ...
-                intersectMultiPoly = recordPoly.intersection(pathPoly)
+                intersectMultiPoly = shapely.geometry.polygon.orient(recordPoly.intersection(pathPoly))
                 if intersectMultiPoly.is_empty:
                     continue
 
